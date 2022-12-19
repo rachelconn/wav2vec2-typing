@@ -94,6 +94,8 @@ celerybeat-schedule
 # virtualenv
 .venv
 venv/
+lenv/
+wenv/
 ENV/
 
 # Spyder project settings
@@ -136,6 +138,7 @@ experimental/*
 wandb/
 
 # Hydra artifacts
+*.hydra
 nohup.out
 multirun
 outputs

@@ -13,3 +13,10 @@ Follow the steps from [the original fairseq repo](https://github.com/facebookres
 
 # Fine-tuning
 - Run `./finetune.sh`, replacing `task.data` with the labeled manifest folder path and `--config-dir` with `${repo_path}/examples/wav2vec/finetuning`.
+
+# Converting model to Hugging Face format for inference
+- Run `./convert_to_hf.sh`, making sure that the arguments are set correctly:
+  - `--pytorch_dump_folder_path`: path to save the converted model to
+  - `--checkpoint_path`: path to `.pt` file for conversion
+  - `--dict_path`: path to `dict.ltr.txt` used during fine-tuning
+  - `--config_path`: path to `config.json`, should be located in the root folder of this repo
